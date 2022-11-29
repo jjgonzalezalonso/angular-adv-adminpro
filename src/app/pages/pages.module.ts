@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { DonaComponent } from './grafica1/dona/dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,15 @@ import { DonaComponent } from './grafica1/dona/dona.component';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    DonaComponent
+    DonaComponent,
+    AccountSettingsComponent
   ],
   exports:[
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
